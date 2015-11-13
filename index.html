@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<link rel="stylesheet" type="text/css" href="bower_components/angular-material/angular-material.css">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<style type="text/css">
+			.text-gray{
+				color: #4A4949!important;
+			}
+			label{
+				text-align: start;
+			}
+			button>span{
+				font-size: 2em!important;
+			}
+		</style>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body ng-app="presentationApp">
+
+		<div class="reveal" ng-controller="main_Ctrl as main">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<section>
+						<h1>AngularJS</h1>
+						<img class="fragment current-visible" src="assets/images/angular-shield.png" height="300vh">
+						<h3>Más ñapa</h3>
+						<p>
+							<small>Diego Coy / <a href="http://www.twitter.com/unJavaScripter">@unJavaScripter</a> </small>
+						</p>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							```js
+							  let me = {
+							  	name: "Diego Coy",
+							  	job: [
+							  		{
+							  			company: "Tappsi",
+							  			title: "Front End Developer"
+							  		},
+							  		{
+							  			company: "_independiente_",
+							  			title: "Consultant"
+							  		}
+							  	],
+							  	loves: ["Coding JS", "Giving Talks", "Teaching"],
+							  	hates: ["Programming for IE"],
+							  	contact: "@unJavaScripter",
+							  };
+
+							```
+						</script>
+					</section>
+				</section>
+
+				<!-- 2 -->
+				<section>
+					<section>
+						<h2>JavaScript</h2>
+						<img src="./assets/images/js_logo.png" height="500vh">
+					</section>
+					<section>
+						<h1>104.215.93.21:8080</h1>
+					</section>
+					<section>
+
+
+					<md-content md-theme="docs-dark" layout-padding layout="column" layout-sm="column">
+						<md-button class="md-primary md-raised" ng-click="main.create_jsLvl()">JS LVL Poll</md-button>
+				  	</md-content>
+
+				        
+						
+
+
+					</section>
+				</section>
+
+
+
+				<section>
+
+					<section>
+						<img src="./assets/images/angulargoogle.png" height="200vh">
+					</section>
+					
+					<section>
+						<h2>¿Algo En producción?</h2>
+						<img class="fragment current-visible" src="./assets/images/madewith.png" height="600vh">
+						<br>
+						<a href="https://www.madewithangular.com">https://www.madewithangular.com</a>
+					</section>
+
+					<section>
+						<h2>...</h2>
+						<img class="fragment current-visible" src="./assets/images/ng-tappsi.png" height="600vh">
+						<br>
+						<a href="https://web.tappsi.co">https://web.tappsi.co</a>
+					</section>
+
+					<section>
+						<h3>La gente cuando empieza con Angular</h3>
+						<img class="fragment current-visible" src="./assets/images/dunno-dog.jpg">
+					</section>
+
+
+					<section>
+						<h2>¿Cómo ayudamos?</h2>
+						<img class="fragment current-visible" src="assets/images/angularjs-co.jpeg" height="500vh">
+					</section>
+
+					<section>
+						<md-content md-theme="docs-dark" layout-padding layout="column" layout-sm="column">
+							<md-button class="md-primary md-raised" ng-click="main.create_ngLvl()">NG LVL Poll</md-button>
+					  	</md-content>
+					</section>
+
+				</section>
+
+
+				<section>
+					<h2>Estructura general</h2>
+					<img class="fragment current-visible" src="assets/images/ng-structucture.png" height="400vh">
+					<small>http://codewala.net/2014/07/04/learning-angularjs-with-asp-net-mvc-part-5/</small>
+				</section>
+
+				<section>
+					<section>
+						<h2>Otras particularidades</h2>
+					</section>
+					
+					<section>
+						<h2>No old-IE</h2>
+
+						<img class="fragment current-visible" src="assets/images/ng-spidey.jpg" height="400vh">
+
+					</section>
+					<section>
+						<h2>Angular 2</h2>
+
+						<img class="fragment current-visible" src="assets/images/ng-stark.jpg" height="400vh">
+
+					</section>
+
+					<section>
+						<h2>Angular 2</h2>
+
+						<img class="fragment current-visible" src="assets/images/ng-ripscope.png" height="500vh">
+						<p>ng-conf EU 2014</p>
+
+					</section>
+
+					<section>
+						<h2>¿Para que aprender Angular 1.x si después viene Angular 2?</h2>
+						<img class="fragment current-visible" src="assets/images/es6-2015.jpg" height="450vh">
+					</section>
+
+				</section>
+
+				
+
+				<section>
+					<h2>¿Qué vamos a ver?</h2>
+					<p>
+						<ul>
+							<li>Estructura básica de una aplicación en AngularJS</li>
+							<li>Los componentes</li>
+								<ul>
+									<li>Controladores</li>
+									<li>Vistas</li>
+									<li>Directivas de AngularJS</li>
+									<li>Directivas personalizadas</li>
+									<li>Filtros</li>
+								</ul>
+							<li>Modularización</li>
+							<li>Comunicación con un API</li>
+							<li>Promesas</li>
+						</ul>
+					</p>
+				</section>
+				<section>
+					<h2>Con dedicación y algo de suerte</h2>
+					<img class="fragment current-visible" src="assets/images/ng-neo.jpg" height="450vh" >
+				</section>
+				<section>
+					<section>
+						<h2>Para los dioses del live coding</h2>
+						<img class="fragment current-visible" src="assets/images/veladora.jpg" height="500vh">
+					</section>
+					<section>
+						<h2>Si nos ignoran</h2>
+						<img class="fragment current-visible" src="assets/images/poop-happens.jpg" height="500vh">
+					</section>
+					<section>
+						<h2>To Do list</h2>
+						<img src="assets/images/ng-todolist.png" height="300vh">
+						<p><a href="http://unjavascripter.github.io/listaDeCosasPorHacer/">http://unjavascripter.github.io/listaDeCosasPorHacer/</a></p>
+					</section>
+					<section>
+						<h2>API Client</h2>
+						<img src="assets/images/ng-voice.png" height="400vh">
+						<p><a href="http://104.215.93.21:8080/">http://104.215.93.21:8080/</a>	</p>
+					</section>
+					
+				</section>
+			
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+		<script src="bower_components/angular/angular.js"></script>
+		<script src="bower_components/angular-material/angular-material.js"></script>
+		<script src="bower_components/angular-aria/angular-aria.js"></script>
+		<script src="bower_components/angular-animate/angular-animate.js"></script>
+		<script src="js/app/module.js"></script>
+		<script src="js/app/main_Ctrl.js"></script>
+		<script src="js/app/voice_Factory.js"></script>
+		<script src="js/app/http_Interceptor.js"></script>
+
+	</body>
+</html>

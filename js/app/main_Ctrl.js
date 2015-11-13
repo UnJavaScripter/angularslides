@@ -7,7 +7,7 @@
 	function main_Ctrl(voiceFactory){
 		var vm = this;
 
-		var theChannel = "5644f12acc36b7e0f8ba8343";
+		var theChannel = "56457f7b0c45ccf619cc00ad";
 
 	    function createPoll(pollObj){
 	    	var createChannel_promise = voiceFactory.createPoll(pollObj, theChannel);
